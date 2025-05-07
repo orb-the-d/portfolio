@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Personal Portfolio Website</title>
+</head>
+<body>
+
+  
+  <header id="header">
+    <div class="header-container">
+      <img src="/image/logo.png" alt="Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-text">
+      <h1>Welcome to My Portfolio</h1>
+      <p>I'm a Web Developer crafting beautiful, responsive experiences.</p>
+      <a href="#contact" class="cta-button">Get in Touch</a>
+    </div>
+  </header>
+
+  
+  <section id="about">
+    <div class="container about-section">
+      <div class="about-content">
+        <div class="about-image">
+          <img src="/image/user.png" alt="User Image">
+        </div>
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>Hello! I'm passionate about building web applications that look great and work flawlessly. With expertise in UI/UX, front-end frameworks, and back-end technologies, I bring ideas to life on the web.</p>
+          <a href="#contact" class="cta-button">Let's Connect</a>
+        </div>
+      </div>
+
+      <div class="service-tabs">
+        <div class="tab-links active" onclick="openTab('skills')">Skills</div>
+        <div class="tab-links" onclick="openTab('experience')">Experience</div>
+        <div class="tab-links" onclick="openTab('education')">Education</div>
+      </div>
+      <div class="tab-contents active-tab" id="skills">
+        <h3>Skills</h3>
+        <ul>
+          <li>UI/UX Design</li>
+          <li>Responsive Web Development</li>
+          <li>JavaScript &amp; Frameworks</li>
+          <li>React &amp; Redux</li>
+          <li>PHP &amp; MySQL</li>
+        </ul>
+      </div>
+      <div class="tab-contents" id="experience">
+        <h3>Experience</h3>
+        <ul>
+          <li>Web Developer at Company ABC (2021 - Present)</li>
+          <li>Freelance Designer (2019 - 2021)</li>
+          <li>Intern at Tech Solutions Corp (2018 - 2019)</li>
+        </ul>
+      </div>
+      <div class="tab-contents" id="education">
+        <h3>Education</h3>
+        <ul>
+          <li>B.Sc. Computer Science - University XYZ (2016 - 2020)</li>
+          <li>Web Dev Bootcamp - Coding Academy (2020)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="services">
+    <div class="container">
+      <h2>My Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Responsive Design</h3>
+          <p>Creating websites that look and work great on any device, from phones to desktops.</p>
+        </div>
+        <div class="service-card">
+          <h3>UI/UX Consultation</h3>
+          <p>Improving user experience with intuitive layouts, user flows, and design principles.</p>
+        </div>
+        <div class="service-card">
+          <h3>Custom Web Development</h3>
+          <p>Building tailored web applications using modern technologies like React, Vue, and Angular.</p>
+        </div>
+        <div class="service-card">
+          <h3>Backend Integration</h3>
+          <p>Developing secure and scalable server-side solutions with Node.js, PHP, and databases.</p>
+        </div>
+        <div class="service-card">
+          <h3>Performance Optimization</h3>
+          <p>Enhancing site speed and performance through best practices, caching, and code optimization.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="portfolio">
+    <div class="container">
+      <h2>My Portfolio</h2>
+      <div class="portfolio-gallery">
+        <div class="portfolio-item"><img src="/image/p1.jpg" alt="Project 1"><h3>Project 1</h3></div>
+        <div class="portfolio-item"><img src="/image/p2.jpg" alt="Project 2"><h3>Project 2</h3></div>
+        <div class="portfolio-item"><img src="/image/p3.jpg" alt="Project 3"><h3>Project 3</h3></div>
+        <div class="portfolio-item"><img src="/image/p4.jpg" alt="Project 4"><h3>Project 4</h3></div>
+        <div class="portfolio-item"><img src="/image/p5.jpg" alt="Project 5"><h3>Project 5</h3></div>
+        <div class="portfolio-item"><img src="/image/p6.jpg" alt="Project 6"><h3>Project 6</h3></div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  
+  <footer>
+    <p>&copy; 2023 My Portfolio. Built with passion.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
